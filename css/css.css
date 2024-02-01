@@ -1,0 +1,215 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: lightgreen;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: auto 1rem;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: lightslategray;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: lightseagreen;
+    text-shadow: 0 0 5px white;
+}
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Header of Main Section */
+.header-main {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.header-main h2{
+    font-size: 2rem;
+}
+.header-main p{
+    font-size: 0.8rem;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Article Section */
+.article {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.article-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+figcaption{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+.article-img img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px gray;
+}
+.article-img img:hover{
+    box-shadow: 0 0 10px lightgreen;
+}
+.article-text{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.article-text p{
+    font-size: 0.8rem;
+    width: 90%;
+}
+#wortel-icon{
+    width: 5rem;
+    height: 5rem;
+}
+/* Form Section */
+.form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input input,
+.form-input select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input input[type="submit"] {
+    background-color: #CAEDFF;
+    color: #141313;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 4px gray;
+}
+
+.form-input input[type="submit"]:active {
+    background-color: #7BD3EA;
+    color: rgb(240, 229, 229);
+}
+
+/* Extra Section */
+.extra {
+    margin-top: 20px;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.extra h2 {
+    margin-bottom: 10px;
+}
+
+.extra ul {
+    list-style-type: decimal;
+
+}
+
+.extra ul li {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    width: 50%;
+    height: 2.2rem;
+    margin: 1rem 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .header-main {
+        width: 90%;
+    }
+
+    .header-main h2 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .article {
+        margin-right: 0;
+    }
+
+    .form {
+        margin-top: 0;
+    }
+
+    .form-input input,
+    .form-input select {
+        margin-bottom: 15px;
+    }
+    .extra ul li {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        padding: 5px 10px; 
+        width: auto; 
+        height: auto; 
+        margin: 5px 0; 
+    }
+}
